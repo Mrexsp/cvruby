@@ -50,11 +50,11 @@ module Civitas
   puts "Usando siguiente:"
   puts (mazoPrueba.siguiente).nombre
   
-  puts "Usando siguiente tras inhabilitar segunda:"
+  puts "Usando siguiente tras inhabilitar segunda: "
   mazoPrueba.inhabilitarCartaEspecial(segunda)
   puts (mazoPrueba.siguiente).nombre
   
-  puts "Usando siguiente tras habilitar segunda:"
+  puts "Usando siguiente tras habilitar segunda: "
   mazoPrueba.habilitarCartaEspecial(segunda)
   puts (mazoPrueba.siguiente).nombre
   puts (mazoPrueba.siguiente).nombre
