@@ -2,11 +2,6 @@
 # To change this template file, choose Tools | Templates
 # and open the template in the editor.
 
-
-
-
-#modules hacen falta?
-#como creo una casilla
 module Civitas
   class Tablero
     def initialize(num)
@@ -16,7 +11,6 @@ module Civitas
         @numCasillaCarcel=1
       end
       
-      #preguntar array e inicializacion @ y @@ y metodos
       @casillas = Array.new() 
       #@casillas=["Salida"]
       @casillas.push(Casilla.new("Salida"))#asi se crea
@@ -37,7 +31,6 @@ module Civitas
     private :correcto, :correcto2
     
     #Metodos get
-    #hace falta parentesis???'
     attr_accessor :carcel
     attr_reader :casillas, :numCasillaCarcel
     
@@ -64,13 +57,12 @@ module Civitas
     #añade juez
     def aniadeJuez
       if !@tieneJuez
-        @casillas.push(Casilla.new("Juez"))#con el texto vale??
+        @casillas.push(Casilla.new("Juez"))
         @tieneJuez=true
       end
     end
     
     #Calcula la nueva posicion
-    #pq no cambia de color nueva pos
     def nuevaPosicion(actual, tirada)
       if correcto
         nuevapos = actual + tirada
